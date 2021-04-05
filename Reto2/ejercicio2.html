@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto Semana #2 - Ejercicio 2</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .title {
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-weight: bold;
+      padding: 0.5rem;
+      color: darkgrey;
+    }
+
+    .form-input {
+      padding-bottom: 0.5rem;
+      margin: 0.25rem;
+      font-weight: bolder;
+      width: 80%;
+    }
+  
+    label {
+      font-size: small;
+      font-weight: bold;
+    }
+
+    #submit {
+      padding: 0.5rem;
+      margin: 0.25rem;
+      background-color: blue;
+      color: white;
+      font-weight: bold;
+    }
+    #login_form{
+      background-color: rgb(245, 245, 245);
+      width: 400px;
+    }    
+  </style>
+  <header>
+    <h3>Reto Semana #2 - Ejercicio 2</h3>
+  </header>
+  <main>
+    <form id="login_form">
+      <div class="title">
+        Sign up
+      </div>
+      <div class="form">
+        <label for="first_name">First name</label><br>
+        <input type="text" class="form-input" id="first_name" maxlength="6" required>
+        <br>
+        <label for="age">Age</label><br>
+        <input type="number" max="120" min="0" class="form-input" id="age" required>
+        <br>
+        <label for="income">Income</label><br>
+        <input type="number" min="0" class="form-input" id="income" required>
+        <br>
+        <label for="more_data">More info</label><br>
+        <textarea class="form-input" id="more_data" maxlength="6"></textarea>
+        <br>
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" value="M"> Male
+        <input type="radio" name="gender" value="F"> Female
+        <input type="radio" name="gender" value="T"> Trans
+        <br>
+        <label for="plan">Plan</label><br>
+        <select class="form-input" id="plan">
+          <option disabled selected hidden>Select plan</option>
+          <option value="1">Option #1</option>
+          <option value="2">Option #2</option>
+        </select>
+        <br>
+        <input type="checkbox" name="subs" id="subs"> Subscribe to Newsletter
+        <br>
+        <button type="submit" class="form-button" id="submit" >Update</button>
+      </div>        
+    </form>
+  </main>
+</body>
+</html>
