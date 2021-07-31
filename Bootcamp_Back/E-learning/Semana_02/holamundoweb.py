@@ -7,4 +7,4 @@ app = Flask(__name__)
 def index():
     return "Hola Mundo desde Flask - Python"
 
-app.run()
+app.run(debug=True, port=8000)
